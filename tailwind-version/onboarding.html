@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding - Fated (CDN)</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fated-red': '#FF6969',
+                        'fated-dark-gray': '#32323C',
+                        'fated-light-gray': '#f8f8f8',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .shadow-top-sm {
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-white font-[Poppins] min-h-screen">
+
+<div class="w-[375px] mx-auto min-h-screen flex flex-col pt-[60px] pb-[30px] items-center text-center">
+
+    <div class="flex justify-center items-center w-full mb-10 px-5">
+        <img src="https://elements-resized.envatousercontent.com/elements-cover-images/17170584-6276-4884-a568-c81f88a63ed1?w=2038&cf_fit=scale-down&q=85&format=auto&s=e203ea40c647f93037f7731ccd4c70987a317c0ff6e612eb9f8dc23baf9ee64c"
+             alt="People chatting illustration"
+             class="max-w-[80%] h-auto">
+    </div>
+
+    <div class="w-full flex-grow px-5">
+
+        <button class="bg-fated-red text-white font-bold text-[18px] py-[12px] px-[30px] rounded-[8px] mb-[30px] uppercase shadow-md shadow-fated-red/40">
+            MEET NEW PEOPLE
+        </button>
+
+        <p class="text-[#777] text-[14px] leading-relaxed max-w-[300px] mx-auto">
+            Meet new people and open the door to new adventures! Every new person you meet can inspire you, teach you something new, or become a true friend. Don't be afraid to start a conversation — one "hello" can change your day!
+        </p>
+    </div>
+
+    <div class="w-full max-w-[375px] flex-shrink-0 px-5 pt-[30px] relative bg-white shadow-top-sm mt-auto">
+        <div class="flex items-center justify-between w-full">
+
+            <a href="#" class="text-center py-[15px] w-[100px] rounded-[8px] font-bold text-[16px] uppercase text-[#555] bg-fated-light-gray transition-colors">
+                SKIP
+            </a>
+
+            <div class="flex flex-grow justify-center items-center space-x-[6px] mx-[10px]">
+                <span class="w-2 h-2 rounded-[2px] bg-fated-red"></span> <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+                <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+                <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+            </div>
+
+            <a href="auth.html" class="bg-fated-red text-white text-center py-[15px] w-[100px] rounded-[8px] font-bold text-[16px] uppercase shadow-md shadow-fated-red/40 transition-colors">
+                NEXT
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

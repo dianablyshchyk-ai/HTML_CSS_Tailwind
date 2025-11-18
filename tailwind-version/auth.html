@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth - Fated (CDN)</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fated-red': '#FF6969',
+                        'fated-dark-gray': '#32323C',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-fated-red text-white font-[Lato] min-h-screen">
+
+<div class="w-[375px] mx-auto min-h-screen flex flex-col items-center px-[47px] pt-10 pb-10">
+
+    <header class="flex flex-col items-center mb-[50px] font-[Luckiest_Guy] mt-0">
+        <svg class="w-[100px] h-[100px] fill-white mb-[10px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <h1 class="text-[50px] tracking-[0.05em] font-black m-0">FATED</h1>
+    </header>
+
+    <div class="flex justify-center mb-[30px] w-[280px]">
+        <a href="#" class="w-[130px] h-[30px] rounded-[5px] text-center leading-[30px] text-[12px] font-black tracking-widest uppercase bg-[#ffffff]/10 text-white mx-[10px]">
+            LOGIN
+        </a>
+        <a href="#" class="w-[130px] h-[30px] rounded-[5px] text-center leading-[30px] text-[12px] font-black tracking-widest uppercase bg-white text-fated-red mx-[10px]">
+            REGISTER
+        </a>
+    </div>
+
+    <form class="flex flex-col items-center w-[280px] flex-grow">
+
+        <input type="text" placeholder="user name" class="w-full h-[50px] p-0 px-5 my-[10px] border-none rounded-[5px] text-fated-dark-gray placeholder:text-fated-dark-gray text-[15px] font-normal tracking-widest text-center focus:outline-none focus:ring-2 focus:ring-white">
+        <input type="password" placeholder="password" class="w-full h-[50px] p-0 px-5 my-[10px] border-none rounded-[5px] text-fated-dark-gray placeholder:text-fated-dark-gray text-[15px] font-normal tracking-widest text-center focus:outline-none focus:ring-2 focus:ring-white">
+        <input type="email" placeholder="email" class="w-full h-[50px] p-0 px-5 my-[10px] border-none rounded-[5px] text-fated-dark-gray placeholder:text-fated-dark-gray text-[15px] font-normal tracking-widest text-center focus:outline-none focus:ring-2 focus:ring-white">
+
+        <a href="#" class="self-end mt-5 mb-5 text-[10px] text-white no-underline uppercase">FORGOT PASSWORD?</a>
+
+        <button type="submit" class="w-full h-[50px] rounded-[5px] border-none cursor-pointer bg-white text-fated-red text-[15px] font-black tracking-widest uppercase mt-auto">
+            REGISTER
+        </button>
+    </form>
+
+    <p class="text-[10px] text-white uppercase mt-5">
+        ALREADY HAVE AN ACCOUNT? <a href="#" class="text-white underline font-bold">LOGIN</a>
+    </p>
+
+</div>
+
+</body>
+</html>
